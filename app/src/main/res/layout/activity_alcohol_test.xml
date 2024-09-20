@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.MainActivity">
+
+    <View
+        android:id="@+id/backgroundTop"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/top_round_background_black" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="50dp"
+        android:background="@drawable/front_round_background"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="30dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="음주 측정"
+            android:textSize="35sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="35dp" />
+
+        <LinearLayout
+            android:id="@+id/centerCircle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/circle_center_black"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="@+id/textView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ITMT"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="0.000"
+                android:textColor="#000000"
+                android:textSize="60dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="%BAC"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="미측정"
+                android:textSize="36dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="음주 상태를 확인하세요."
+            app:layout_constraintTop_toBottomOf="@+id/centerCircle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_travel_write_pic_del"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/circle_center_red"
+        android:src="@drawable/circle_center_red"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/iv_travel_write_pic"
+        android:src="@drawable/default_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        android:id="@+id/iv_travel_writer_add_pic"
+        android:src="@drawable/plusoutline"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/tv_travel_comment_item_writer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="작성자"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/tv_travel_comment_item_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="시간"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_travel_comment_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/et_travel_comment_item_edit_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:textSize="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_travel_comment_item_edit"
+            android:visibility="gone"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_travel_comment_item_btn_edit_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정하기" />
+            <Button
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_travel_comment_item_edit_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_travel_comment_item_button"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_travel_comment_item_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정" />
+            <Button
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_travel_comment_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
